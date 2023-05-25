@@ -58,14 +58,15 @@ html {
 }
 
 .button-share {
-    position: absolute;
-    height: 35px;
+    position: relative;
+    height: 45px;
     padding-left: 20px;
-    width: 400px;
+    width: 600px;
     border-radius: 10px;
     border: 1px solid #f0b442;
-    top: 55px;
+    top: 10px;
     outline: none;
+    margin-left: 50px;
 }
 .search:hover{
     border: #f0b442;
@@ -94,11 +95,11 @@ html {
 
 .search {
     border-radius: 0px 10px 10px 0px;
-    position: relative;
-    left: 400px;
-    width: 61px;
-    height: 35px;
-    top: 7px;
+    position: absolute;
+    left: 770px;
+    width: 60px;
+    height: 45px;
+    top: 58px;
     background-color: #f0b442;
     border: 3px solid #f0b442;
     z-index: 1;
