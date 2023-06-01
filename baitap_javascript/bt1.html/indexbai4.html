@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai4js.js">
+    <style>
+        body{
+        margin: 100px auto;
+        padding-left:100px ;
+        }
+
+    </style>
+</head>
+<body>
+            <table >
+                <tr><td>Mã</td>
+                    <th>Món</th>
+                    <th>Giá</th>
+                </tr>
+                <tr><td>1</td>
+                    <td>Nước lọc</td>
+                    <td>15k</td>
+                </tr>
+                <tr><td>2</td>
+                    <td>Coca</td>
+                    <td>17k</td>
+                </tr>
+                <tr><td>3</td>
+                    <td>7 Up</td>
+                    <td>17k</td>
+                </tr>
+                <tr><td>4</td>
+                    <td>Pessi</td>
+                    <td>17k</td>
+                </tr> 
+                <tr><td>5</td>
+                    <td>Nước mía</td>
+                    <td>10k</td>
+                </tr>
+            </table>
+            <from class="goimon" name="name_mon" acction="#" method="post" >
+                <input type="text" name="txt_nhap"  id="nhap">
+                <button type="button " onclick="myFunction ()">chọn</button>
+            </from>
+            <script>
+                function myFunction (){
+    var  iDname = document.getElementById('nhap').value;
+    switch(iDname){
+        case '1':
+            alert('nước suối 15k');
+            break;
+        case '2':
+            alert('Coca 17k');
+            break;
+        case '3':
+                alert('7 Up 17k');
+                break;
+        case '4':
+                alert('Pesi 17k');
+                break;
+        case '5':
+                alert('Nước mía 10k');
+                break;
+    default :
+        alert('nhạp không hợp lệ');
+        break;
+    };
+
+}
+            </script>
+</body>
+</html>
