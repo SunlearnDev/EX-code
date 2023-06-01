@@ -261,7 +261,7 @@ width: 100%;
     border-radius: 10px;
 }
 .sty-widget{
-    height: 280px;
+    height: 100%;
 }
 
 .show-outstanding > li a{
@@ -318,7 +318,7 @@ width: 100%;
 } */
 
 .list-npbat{
-    margin-left: 10 ;
+    margin: 0;
     text-align: center;
     background-color: #ffff;
     width: 100%;
