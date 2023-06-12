@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/javascript">
+    <script>
             function grade(score) {
                 if(score >= 0 && score <=100){
                     if(score >= 90){
@@ -13,13 +13,13 @@
                         alert("expected");
                     }else if(score<90 && score >=60){
                         document.write("very good");
-                    }else if(score <60 &&score >=50){
+                    }else if(score <60 && score >=50){
                         document.write("not bad");
                     }else{
                         document.write("fail");
                     }
                 } else {
-            document.write("score must be greater than");
+                 document.write("score must be greater than");
                 }
             }
     </script>
@@ -28,8 +28,7 @@
         <from class="saw" name="fram_grade" acction="#" method="post">
             <label >input score: </label>
             <input type="text" name="txt_score">
-            <input type="button" name="btn_graen" onclick="grade(txt_score.value)" value="device-Grade"/>
+            <input type="button" name="btn_graen" onclick="grade(txt_score)" value="device-Grade"/>
         </from>
-       
 </body>
 </html>

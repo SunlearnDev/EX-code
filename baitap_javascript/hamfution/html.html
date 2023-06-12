@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sub(){
+            var path = document.frm;
+            path.txt_resu.value = (path.txt-x.value - path.txt-y.value);
+        }
+       function proAdd() {
+        var hearder='<table > <tr> <td> noise</td> <td>name</td><td>quals</td><td>distance</td><td>sub-total</td></tr>';
+            var data =``;
+            var foder = `</table>`;
+            var total = 0;
+            var no = 1;
+        var patht = document.prod;
+        var name = patht.txt-prox.value;
+        var qua =patht.txt-qua.value;
+        var price = patht.txt-price.value;
+        var mute =qua*price;
+        total += mute;
+        var mute1=`<tr><td>' + name + '</td><td>' + qua+'</td>'' + price+'</td><td>' + mute +'$</td></tr>`;
+        var mute2 = `<tr><td colspan='4'>tatol</td><td>'+total+'$</td></tr> `;
+        data+=mute1;
+        document.getElementById("pro_List").innerHTML = hearder+data+mute2+foder;
+        no++;
+       }
+    </script>
+</head>
+<body>
+    <form action="" name="frm" method="possy">
+            <input type="text"  name="txt-x" value=""> -
+            <input type="text"  name="txt-y" value=""> =
+            <input type="text"  name="txt_resu" value="" readonly="readonly">
+            <input type="button" value="calcutr" name="bnt-calure" onclick="sub()">
+    </form>
+    <form action="" name="prod" method="post">
+        <p>
+            prodeuc
+        </p>
+        <input type="text" name="txt-prox" value="">
+        <br>
+        <p>qua</p>
+        <input type="text" name="txt-qua" value="">
+        <br>
+        <p>price</p>
+        <input type="text" name="txt-price" value="">
+        <br>
+        <input type="button" value="" onclick="proAdd()">
+    </form>
+    <div id="pro_List"></div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        p{
+            width: 100%;
+            display: block;
+        }
+        .inpit{
+            margin-right: 43%;
+            margin-left: auto;
+            width: 500px;
+            margin-top: 100px;
+            color: black;
+        }
+      
+        .thear-tb{
+            display: flex;
+        }
+        .thear-tb th{
+            width: 90px;
+        }
+        
+    </style>
+    <script src="/pro-data.js"></script>1
+</head>
+<body>
+    
+         <div class="inpit">
+            <p class="name3" > Name </p>
+            <input type="text" id="name" class="akjskjdf">
+            <br>
+            <p class="idd" > Id </p>
+            <input type="text" id="id" class="akjskjdf">
+            <br>
+            <p class="productt"> Product </p>
+            <input type="text" id="prdname" class="akjskjdf">
+            <br>
+            <p class="quanlity"> Quantily </p>
+            <input type="text" id="qty" class="akjskjdf">
+            <br>
+            <p class="pricee"> Price</p>
+            <input type="text" id="price" class="akjskjdf"> 
+            <br> 
+            <input type="button" style="width: 25%; cursor: pointer;" value="Save" onclick="save()">
+            <input type="button" style="width: 25%; cursor: pointer;" value="Show" onclick="show()">
+            <input type="button" style="width: 25%; cursor: pointer;"  value="Reset"onclick="reset()">
+            <table class="table">
+                    <thead class="thear-tb">
+                        <tr>
+                            <th>Auti inc</th>
+                            <th>Custum</th>
+                            <th>Id</th>
+                            <th>Product</th>
+                            <th>Quntity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbl" style="background-color: aquamarine;
+                    width: 700px;height: 700px; color: black;"></tbody>
+            </table>
+         </div>
+</body>
+</html>

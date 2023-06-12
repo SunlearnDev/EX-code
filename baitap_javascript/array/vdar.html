@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body { 
+           background-color: rgba(165, 42, 42, 0.253);
+            max-width: 100%;
+            height: 45px;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="demo" style="width: 100%; height: 700px; background-color: beige; display: flex;
+    justify-content: center;
+    align-items: center; " > 
+    </p>
+    <button onclick="init()"> baams vaof</button>
+    <button onclick="test()"> bấm vào</button>
+    <p id="danh"></p>
+
+    <div class="sa">
+        <input type="text" name="elmi" id="nhap" value="">
+        <button onclick="tasyt()">push</button>
+        <button onclick="possp()">posp</button>
+    </div>
+    <script>
+        let mab = [`hoc` , `ap`, `tring`, `tai`,];
+        document.getElementById("demo").innerHTML =mab;
+
+        function init(){
+            mab.push(`hllollllll`);
+            document.getElementById("demo").innerHTML =mab;
+        }
+        function test(){
+            mab[mab.length] = `elon`;
+            document.getElementById("demo").innerHTML =mab;
+        }
+
+        function tasyt(){
+            let amp = [];
+            var a = document.getElementById("nhap").value
+            amp.push (a);
+            document.getElementById("demo").innerHTML+=amp;
+        }
+        function possp(){
+            let amp = [];
+            var a = document.getElementById("nhap").value
+            amp.pop (a);
+            document.getElementById("demo").innerHTML-=amp;
+        }
+    </script>
+</body>
+</html>
